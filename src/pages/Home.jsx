@@ -6,39 +6,40 @@ import Footer from '../components/Footer';
 
 const Home = () => {
   // Product data for different sections
+  // Ensure these image paths are correct relative to your project's root or public folder.
   const homeProducts = [
-    { name: 'Soft chairs', price: 'USD 19', image: 'https://via.placeholder.com/150x150/8B4513/ffffff?text=Chair' },
-    { name: 'Sofa & chair', price: 'USD 19', image: 'https://via.placeholder.com/150x150/654321/ffffff?text=Sofa' },
-    { name: 'Kitchen dishes', price: 'USD 19', image: 'https://via.placeholder.com/150x150/FF6347/ffffff?text=Dishes' },
-    { name: 'Smart watches', price: 'USD 19', image: 'https://via.placeholder.com/150x150/0066cc/ffffff?text=Watch' }
+    { name: 'Soft chairs', price: 'USD 19', image: './interior/1.jpg' },
+    { name: 'Sofa & chair', price: 'USD 19', image: './interior/2.jpg' },
+    { name: 'Kitchen dishes', price: 'USD 19', image: './interior/9.jpg' },
+    { name: 'Smart watches', price: 'USD 19', image: './tech/8.jpg' }
   ];
 
   const electronicsProducts = [
-    { name: 'Smart watches', price: 'USD 10', image: 'https://via.placeholder.com/120x120/0066cc/ffffff?text=Watch' },
-    { name: 'Cameras', price: 'USD 10', image: 'https://via.placeholder.com/120x120/333333/ffffff?text=Camera' },
-    { name: 'Headphones', price: 'USD 10', image: 'https://via.placeholder.com/120x120/0099cc/ffffff?text=Headphones' },
-    { name: 'Smart watches', price: 'USD 240', image: 'https://via.placeholder.com/120x120/000000/ffffff?text=Watch' },
-    { name: 'Gaming set', price: 'USD 35', image: 'https://via.placeholder.com/120x120/FF0000/ffffff?text=Gaming' },
-    { name: 'Laptops & PC', price: 'USD 340', image: 'https://via.placeholder.com/120x120/666666/ffffff?text=Laptop' },
-    { name: 'Smartphones', price: 'USD 19', image: 'https://via.placeholder.com/120x120/00AA00/ffffff?text=Phone' },
-    { name: 'Electric kettle', price: 'USD 240', image: 'https://via.placeholder.com/120x120/FF4500/ffffff?text=Kettle' }
+    { name: 'Smart watches', price: 'USD 10', image: './tech/8.jpg' },
+    { name: 'Cameras', price: 'USD 10', image: './tech/6.jpg' },
+    { name: 'Headphones', price: 'USD 10', image: './tech/9.jpg' },
+    { name: 'Smart watches', price: 'USD 240', image: './tech/8.jpg' },
+    { name: 'Gaming set', price: 'USD 35', image: './tech/5.jpg' },
+    { name: 'Laptops & PC', price: 'USD 340', image: './tech/7.jpg' },
+    { name: 'Smartphones', price: 'USD 19', image: './tech/1.jpg' },
+    { name: 'Electric kettle', price: 'USD 240', image: './tech/10.jpg' }
   ];
 
   const recommendedProducts = [
-    { id: 1, name: 'T-shirts with multiple colors, for men', price: '$10.30', image: 'https://via.placeholder.com/200x200/4169E1/ffffff?text=T-Shirt' },
-    { id: 2, name: 'Jeans shorts for men blue color', price: '$10.30', image: 'https://via.placeholder.com/200x200/1E90FF/ffffff?text=Jeans' },
-    { id: 3, name: 'Brown winter coat medium size', price: '$12.50', image: 'https://via.placeholder.com/200x200/8B4513/ffffff?text=Coat' },
-    { id: 4, name: 'Jeans bag for travel for men', price: '$34.00', image: 'https://via.placeholder.com/200x200/000080/ffffff?text=Bag' },
-    { id: 5, name: 'Leather wallet', price: '$99.00', image: 'https://via.placeholder.com/200x200/654321/ffffff?text=Wallet' }
+    { id: 1, name: 'T-shirts with multiple colors, for men', price: '$10.30', image: './cloth/1.jpg' },
+    { id: 2, name: 'Jeans shorts for men blue color', price: '$10.30', image: './cloth/4.jpg' },
+    { id: 3, name: 'Brown winter coat medium size', price: '$12.50', image: './cloth/3.jpg' },
+    { id: 4, name: 'Jeans bag for travel for men', price: '$34.00', image: './cloth/5.jpg' },
+    { id: 5, name: 'Leather wallet', price: '$99.00', image: './cloth/6.jpg' }
   ];
 
   // Additional products for the new section
   const additionalProducts = [
-    { id: 1, name: 'Canvas Denim Jeans- Top-quality', price: '$9.99', image: 'https://via.placeholder.com/150x150/1E90FF/ffffff?text=Jeans' },
-    { id: 2, name: 'Headset for gaming with mic', price: '$8.99', image: 'https://via.placeholder.com/150x150/0099cc/ffffff?text=Headset' },
-    { id: 3, name: 'Smartwatch, Waterproof with chest strap', price: '$10.30', image: 'https://via.placeholder.com/150x150/0066cc/ffffff?text=Watch' },
-    { id: 4, name: 'Pot water for men leather multicolour', price: '$10.30', image: 'https://via.placeholder.com/150x150/8B4513/ffffff?text=Pot' },
-    { id: 5, name: 'Spray bag for travel for men', price: '$80.95', image: 'https://via.placeholder.com/150x150/000080/ffffff?text=Bag' }
+    { id: 1, name: 'Canvas Denim Jeans- Top-quality', price: '$9.99', image: './cloth/7.jpg'},
+    { id: 2, name: 'Headset for gaming with mic', price: '$8.99', image: './tech/5.jpg' },
+    { id: 3, name: 'Smartwatch, Waterproof with chest strap', price: '$10.30', image: './tech/8.jpg' },
+    { id: 4, name: 'Pot water for men leather multicolour', price: '$10.30', image: './tech/10.jpg' },
+    { id: 5, name: 'Spray bag for travel for men', price: '$80.95', image: './cloth/5.jpg' }
   ];
 
   // Services data
@@ -66,17 +67,18 @@ const Home = () => {
   ];
 
   // Suppliers by region data
+  // Updated all flags to use image paths for consistency and better display control.
+  // Replace the 'https://placehold.co' URLs with your actual flag image paths (e.g., './flags/AU.png').
   const supplierRegions = [
-    { country: 'Arabic Emirates', flag: '🇦🇪' },
-    { country: 'Australia', flag: '🇦🇺' },
-    { country: 'United States', flag: '🇺🇸' },
-    { country: 'Russia', flag: '🇷🇺' },
-    { country: 'Italy', flag: '🇮🇹' },
-    { country: 'Denmark', flag: '🇩🇰' },
-    { country: 'France', flag: '🇫🇷' },
-    { country: 'Arabic Emirates', flag: '🇦🇪' },
-    { country: 'China', flag: '🇨🇳' },
-    { country: 'Great Britain', flag: '🇬🇧' }
+    { country: 'Arabic Emirates', flag: './flags/AE.png' }, // Original path kept
+    { country: 'Australia', flag: 'https://placehold.co/24x18/cccccc/000?text=AU' }, // Placeholder, replace with actual path
+    { country: 'United States', flag: 'https://placehold.co/24x18/cccccc/000?text=US' }, // Placeholder, replace with actual path
+    { country: 'Russia', flag: 'https://placehold.co/24x18/cccccc/000?text=RU' }, // Placeholder, replace with actual path
+    { country: 'Italy', flag: 'https://placehold.co/24x18/cccccc/000?text=IT' }, // Placeholder, replace with actual path
+    { country: 'Denmark', flag: 'https://placehold.co/24x18/cccccc/000?text=DK' }, // Placeholder, replace with actual path
+    { country: 'France', flag: 'https://placehold.co/24x18/cccccc/000?text=FR' }, // Placeholder, replace with actual path
+    { country: 'China', flag: 'https://placehold.co/24x18/cccccc/000?text=CN' }, // Placeholder, replace with actual path
+    { country: 'Great Britain', flag: 'https://placehold.co/24x18/cccccc/000?text=GB' } // Placeholder, replace with actual path
   ];
 
   return (
@@ -100,11 +102,12 @@ const Home = () => {
                 {homeProducts.map((product, index) => (
                   <div key={index} className="col-6 col-sm-4 col-md-3">
                     <div className="card text-center h-100" style={{minHeight: '120px'}}>
+                      {/* Further increased height for home product images */}
                       <img 
                         src={product.image} 
                         className="card-img-top" 
                         alt={product.name}
-                        style={{height: '60px', objectFit: 'cover'}}
+                        style={{height: '140px', objectFit: 'cover'}} // Increased from 100px
                       />
                       <div className="card-body p-1" style={{fontSize: '10px'}}>
                         <p className="card-text mb-1" style={{fontSize: '9px', lineHeight: '1.1'}}>{product.name}</p>
@@ -135,11 +138,12 @@ const Home = () => {
                 {electronicsProducts.map((product, index) => (
                   <div key={index} className="col-6 col-sm-4 col-md-3">
                     <div className="card text-center h-100" style={{minHeight: '100px'}}>
+                      {/* Further increased height for electronics product images */}
                       <img 
                         src={product.image} 
                         className="card-img-top" 
                         alt={product.name}
-                        style={{height: '50px', objectFit: 'cover'}}
+                        style={{height: '120px', objectFit: 'cover'}} // Increased from 90px
                       />
                       <div className="card-body p-1">
                         <p className="card-text mb-1" style={{fontSize: '8px', lineHeight: '1.1'}}>{product.name}</p>
@@ -214,11 +218,12 @@ const Home = () => {
             {recommendedProducts.map((product) => (
               <div key={product.id} className="col-6 col-sm-4 col-md-3 col-lg-2">
                 <div className="card h-100">
+                  {/* Further increased height for recommended product images */}
                   <img 
                     src={product.image} 
                     className="card-img-top" 
                     alt={product.name}
-                    style={{height: '80px', objectFit: 'cover'}}
+                    style={{height: '160px', objectFit: 'cover'}} // Increased from 120px
                   />
                   <div className="card-body p-1 p-sm-2">
                     <h6 className="card-title mb-1" style={{fontSize: '9px', lineHeight: '1.2', fontWeight: '500'}}>{product.name}</h6>
@@ -238,11 +243,12 @@ const Home = () => {
             {additionalProducts.map((product) => (
               <div key={product.id} className="col-6 col-sm-4 col-md-3 col-lg-2">
                 <div className="card h-100">
+                  {/* Further increased height for additional product images */}
                   <img 
                     src={product.image} 
                     className="card-img-top" 
                     alt={product.name}
-                    style={{height: '80px', objectFit: 'cover'}}
+                    style={{height: '160px', objectFit: 'cover'}} // Increased from 120px
                   />
                   <div className="card-body p-1 p-sm-2">
                     <h6 className="card-title mb-1" style={{fontSize: '9px', lineHeight: '1.2', fontWeight: '500'}}>{product.name}</h6>
@@ -264,21 +270,22 @@ const Home = () => {
               <div key={index} className="col-6 col-md-3">
                 <div className="card h-100">
                   <div className="position-relative">
+                    {/* Further increased height for service images */}
                     <img 
                       src={service.image} 
                       className="card-img-top" 
                       alt={service.title}
-                      style={{height: '80px', objectFit: 'cover'}}
+                      style={{height: '180px', objectFit: 'cover'}} // Increased from 150px
                     />
                     <div 
                       className="position-absolute top-50 start-50 translate-middle bg-white rounded-circle d-flex align-items-center justify-content-center"
-                      style={{width: '25px', height: '25px'}}
+                      style={{width: '35px', height: '35px'}} /* Slightly larger icon circle for visibility */
                     >
-                      <span style={{fontSize: '12px'}}>{service.icon}</span>
+                      <span style={{fontSize: '16px'}}>{service.icon}</span> {/* Larger icon size */}
                     </div>
                   </div>
                   <div className="card-body text-center p-1">
-                    <h6 className="card-title mb-0" style={{fontSize: '9px', lineHeight: '1.2', fontWeight: '500'}}>{service.title}</h6>
+                    <h6 className="card-title mb-0" style={{fontSize: '11px', lineHeight: '1.2', fontWeight: '500'}}>{service.title}</h6> {/* Larger font size for service title */}
                   </div>
                 </div>
               </div>
@@ -294,9 +301,16 @@ const Home = () => {
           <div className="row g-1 g-sm-2 g-md-3">
             {supplierRegions.map((supplier, index) => (
               <div key={index} className="col-6 col-sm-4 col-md-3 col-lg-2">
-                <div className="d-flex align-items-center border rounded bg-white h-100" style={{padding: '4px 6px', minHeight: '35px'}}>
-                  <span className="me-1 flex-shrink-0" style={{fontSize: '14px'}}>{supplier.flag}</span>
-                  <small className="text-muted" style={{fontSize: '9px', lineHeight: '1.2'}}>{supplier.country}</small>
+                <div className="d-flex align-items-center border rounded bg-white h-100" style={{padding: '6px 8px', minHeight: '45px'}}> {/* Adjusted padding and minHeight */}
+                  <img 
+                    src={supplier.flag} 
+                    alt={`${supplier.country} flag`} 
+                    className="me-2 flex-shrink-0 rounded" // Added rounded for flags
+                    style={{ width: '28px', height: '20px', objectFit: 'cover' }} // Specific size for flag images
+                    // Add onerror if you want to handle broken image links with a fallback
+                    // onerror="this.onerror=null;this.src='https://placehold.co/24x18/cccccc/000?text=NF';" 
+                  />
+                  <small className="text-muted" style={{fontSize: '10px', lineHeight: '1.2'}}>{supplier.country}</small> {/* Adjusted font size */}
                 </div>
               </div>
             ))}

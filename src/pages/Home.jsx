@@ -46,23 +46,23 @@ const Home = () => {
   const services = [
     {
       title: 'Source from Industry Hubs',
-      image: 'https://via.placeholder.com/250x150/F4A460/ffffff?text=Industry+Hubs',
-      icon: '📋'
+      image: './resources/1.jpg',
+      
     },
     {
       title: 'Customize Your Products',
-      image: 'https://via.placeholder.com/250x150/4682B4/ffffff?text=Customize',
-      icon: '🎨'
+      image: './resources/2.jpg',
+      
     },
     {
       title: 'Fast, reliable shipping by ocean or air',
-      image: 'https://via.placeholder.com/250x150/708090/ffffff?text=Shipping',
-      icon: '✈️'
+      image: './resources/3.jpg',
+      
     },
     {
       title: 'Product monitoring and inspection',
-      image: 'https://via.placeholder.com/250x150/BC8F8F/ffffff?text=Inspection',
-      icon: '🔍'
+      image: './resources/4.jpg',
+      
     }
   ];
 
@@ -71,14 +71,14 @@ const Home = () => {
   // Replace the 'https://placehold.co' URLs with your actual flag image paths (e.g., './flags/AU.png').
   const supplierRegions = [
     { country: 'Arabic Emirates', flag: './flags/AE.png' }, // Original path kept
-    { country: 'Australia', flag: 'https://placehold.co/24x18/cccccc/000?text=AU' }, // Placeholder, replace with actual path
-    { country: 'United States', flag: 'https://placehold.co/24x18/cccccc/000?text=US' }, // Placeholder, replace with actual path
-    { country: 'Russia', flag: 'https://placehold.co/24x18/cccccc/000?text=RU' }, // Placeholder, replace with actual path
-    { country: 'Italy', flag: 'https://placehold.co/24x18/cccccc/000?text=IT' }, // Placeholder, replace with actual path
-    { country: 'Denmark', flag: 'https://placehold.co/24x18/cccccc/000?text=DK' }, // Placeholder, replace with actual path
-    { country: 'France', flag: 'https://placehold.co/24x18/cccccc/000?text=FR' }, // Placeholder, replace with actual path
-    { country: 'China', flag: 'https://placehold.co/24x18/cccccc/000?text=CN' }, // Placeholder, replace with actual path
-    { country: 'Great Britain', flag: 'https://placehold.co/24x18/cccccc/000?text=GB' } // Placeholder, replace with actual path
+    { country: 'Australia', flag: './flags/AU.png'  }, // Placeholder, replace with actual path
+    { country: 'United States', flag: './flags/US.png'  }, // Placeholder, replace with actual path
+    { country: 'Russia', flag: './flags/RU.png'  }, // Placeholder, replace with actual path
+    { country: 'Italy', flag: './flags/IT.png'  }, // Placeholder, replace with actual path
+    { country: 'Denmark', flag: './flags/DE.png'  }, // Placeholder, replace with actual path
+    { country: 'France', flag: './flags/FR.png'  }, // Placeholder, replace with actual path
+    { country: 'China', flag: './flags/CN.png'  }, // Placeholder, replace with actual path
+    { country: 'Great Britain', flag: './flags/GB.png' } // Placeholder, replace with actual path
   ];
 
   return (
@@ -308,7 +308,7 @@ const Home = () => {
                     className="me-2 flex-shrink-0 rounded" // Added rounded for flags
                     style={{ width: '28px', height: '20px', objectFit: 'cover' }} // Specific size for flag images
                     // Add onerror if you want to handle broken image links with a fallback
-                    // onerror="this.onerror=null;this.src='https://placehold.co/24x18/cccccc/000?text=NF';" 
+                    // onerror="this.onerror=null;this.src='./tech/5.jpg';" 
                   />
                   <small className="text-muted" style={{fontSize: '10px', lineHeight: '1.2'}}>{supplier.country}</small> {/* Adjusted font size */}
                 </div>
